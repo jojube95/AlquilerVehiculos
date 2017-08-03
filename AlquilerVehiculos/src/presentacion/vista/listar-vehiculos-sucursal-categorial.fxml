@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="385.0" prefWidth="624.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorListarVehiculosSucursalCategoria">
+   <children>
+      <BorderPane prefHeight="385.0" prefWidth="624.0">
+         <top>
+            <HBox prefHeight="54.0" prefWidth="286.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="butCatSup" mnemonicParsing="false" onAction="#categoriaSuperior" text="Categoría superior" />
+               </children>
+            </HBox>
+         </top>
+         <center>
+            <TableView fx:id="tvCoche" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="tcMatricula" prefWidth="191.0" text="Matricula" />
+                  <TableColumn fx:id="tcKmsActuales" minWidth="6.0" prefWidth="199.0" text="KmsActuales" />
+                  <TableColumn fx:id="tcCategoria" minWidth="0.0" prefWidth="231.0" text="Categoria" />
+               </columns>
+            </TableView>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

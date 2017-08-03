@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorPrincipal">
+   <top>
+      <MenuBar BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="Archivo">
+            <items>
+              <MenuItem fx:id="botSalir" mnemonicParsing="false" onAction="#salir" text="Salir" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Cliente">
+            <items>
+              <MenuItem fx:id="botCrearreserva" mnemonicParsing="false" onAction="#crearReserva" text="Crear Reserva" />
+                  <MenuItem fx:id="botCrearClienteCliente" mnemonicParsing="false" onAction="#crearCliente" text="Crear Cliente" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Empleado">
+            <items>
+              <MenuItem fx:id="botCrearClienteEmpleado" mnemonicParsing="false" onAction="#crearCliente" text="Crear Cliente" />
+                  <MenuItem fx:id="botListarReservasSucursal" mnemonicParsing="false" onAction="#listarReservasSucursal" text="Listar Reservas Sucursal" />
+                  <MenuItem fx:id="botEntregarVehiculoReservado" mnemonicParsing="false" onAction="#entregarVehiculoReservado" text="Entregar Vehículo Reservado" />
+                  <MenuItem fx:id="botListarVehiculos" mnemonicParsing="false" onAction="#listarVehiculos" text="Listar Vehículos" />
+            </items>
+          </Menu>
+            <Menu mnemonicParsing="false" text="Admin">
+              <items>
+                <MenuItem fx:id="botListarSucursales" mnemonicParsing="false" onAction="#listarSucursales" text="Listar Sucursales" />
+              </items>
+            </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <center>
+      <Button fx:id="mostrarBD" mnemonicParsing="false" onAction="#mostrarBD" text="Mostrar contenido BD" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

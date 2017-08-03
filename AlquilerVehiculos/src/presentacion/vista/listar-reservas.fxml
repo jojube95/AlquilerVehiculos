@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="275.0" prefWidth="635.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorListarReservas">
+   <children>
+      <BorderPane layoutX="-1.0" layoutY="-2.0" prefHeight="275.0" prefWidth="635.0">
+         <center>
+            <TableView fx:id="tvReservas" prefHeight="142.0" prefWidth="634.0" BorderPane.alignment="CENTER">
+               <columns>
+                  <TableColumn fx:id="id" prefWidth="63.0" text="Id " />
+                  <TableColumn fx:id="fechaRecogida" prefWidth="93.0" text="Fecha recogida" />
+                  <TableColumn fx:id="fechaDevolucio" prefWidth="105.0" text="Fecha devolucion" />
+                  <TableColumn fx:id="categoria" prefWidth="79.0" text="Categoria" />
+                  <TableColumn fx:id="modalidad" prefWidth="95.0" text="Modalidad" />
+                  <TableColumn fx:id="dni" prefWidth="92.0" text="DNI" />
+                  <TableColumn fx:id="nombre" prefWidth="106.0" text="Nombre" />
+               </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <HBox prefHeight="33.0" prefWidth="638.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="aceptar" mnemonicParsing="false" text="Aceptar">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

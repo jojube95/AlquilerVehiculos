@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="314.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorCrearReserva">
+   <children>
+      <VBox prefHeight="316.0" prefWidth="309.0">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="331.0">
+               <children>
+                  <Label text="DNI:" />
+                  <TextField fx:id="dni" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="331.0">
+               <children>
+                  <Label text="Fecha recogida: " />
+                  <DatePicker fx:id="fechaRecogida" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="35.0" prefHeight="20.0" prefWidth="331.0">
+               <children>
+                  <Label text="Fecha devolucion: " />
+                  <DatePicker fx:id="fechaDevolucion" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="20.0" prefWidth="331.0">
+               <children>
+                  <Label text="Modalidad alquiler: " />
+                  <RadioButton fx:id="sKmLim" mnemonicParsing="false" selected="true" text="Km Limitados">
+                     <toggleGroup>
+                        <ToggleGroup fx:id="grupo" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="sKmIlim" mnemonicParsing="false" text="Km Ilimitados" toggleGroup="$grupo" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label minWidth="120.0" text="Categoria" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="mostrarCategorias" mnemonicParsing="false" onAction="#mostrarCategorias" text="Mostar categorias" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="categoria" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="120.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label text="SucursalRecogida" />
+                           </children>
+                        </HBox>
+                        <Button fx:id="mostrarSucursales" mnemonicParsing="false" onAction="#mostrarSucursales" prefHeight="43.0" prefWidth="122.0" text="Mostrar sucursales" />
+                     </children>
+                  </VBox>
+                  <TextField fx:id="sucRecogida" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <VBox prefHeight="200.0" prefWidth="100.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label minWidth="120.0" text="SucursalDevolucion" />
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Button fx:id="mostrarSucursales" mnemonicParsing="false" onAction="#mostrarSucursales" text="Mostrar sucursales" />
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+                  <TextField fx:id="sucDevolucion" />
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="aceptar" mnemonicParsing="false" onAction="#aceptar" text="Aceptar">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cancelar" mnemonicParsing="false" onAction="#cancelar" text="Cancelar">
+                     <HBox.margin>
+                        <Insets left="180.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="100.0" prefWidth="200.0" />
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

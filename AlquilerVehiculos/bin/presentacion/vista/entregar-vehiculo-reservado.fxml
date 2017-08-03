@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="502.0" prefWidth="515.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorEntregarVehiculoReservado">
+   <children>
+      <VBox prefHeight="502.0" prefWidth="515.0">
+         <children>
+            <HBox prefHeight="35.0" prefWidth="301.0">
+               <children>
+                  <Button fx:id="listarReservas" mnemonicParsing="false" onAction="#listarReservas" prefHeight="25.0" prefWidth="97.0" text="Listar reservas" />
+               </children>
+               <VBox.margin>
+                  <Insets left="50.0" top="10.0" />
+               </VBox.margin></HBox>
+            <HBox layoutX="60.0" layoutY="20.0" prefHeight="35.0" prefWidth="301.0">
+               <children>
+                  <Button fx:id="listarVehiculos" mnemonicParsing="false" onAction="#listarVehiculos" prefHeight="25.0" prefWidth="97.0" text="Listar vehiculos">
+                     <HBox.margin>
+                        <Insets left="50.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+            <HBox prefHeight="33.0" prefWidth="515.0">
+               <children>
+                  <Label text="Id reserva">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtIdReserva" prefHeight="27.0" prefWidth="134.0">
+                     <HBox.margin>
+                        <Insets left="128.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="55.0" prefHeight="34.0" prefWidth="368.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="178.0" text="Matricula vehiculo seleccionado">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtMatricula" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="90.0" prefHeight="34.0" prefWidth="368.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="178.0" text="Tipo de seguro">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtTipoSeguro" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="124.0" prefHeight="34.0" prefWidth="368.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="178.0" text="Kms ">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtKms" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="158.0" prefHeight="34.0" prefWidth="368.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="178.0" text="Combustible">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtCombustible" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="192.0" prefHeight="34.0" prefWidth="368.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="178.0" text="Empleado">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <TextField fx:id="txtEmpleado" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="226.0" prefHeight="34.0" prefWidth="368.0">
+               <children>
+                  <Label prefHeight="28.0" prefWidth="178.0" text="Fecha de entrega">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+                  <DatePicker fx:id="fechaEntrega" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="260.0" prefHeight="34.0" prefWidth="368.0">
+               <children>
+                  <Button fx:id="aceptar" mnemonicParsing="false" onAction="#aceptar" text="Aceptar">
+                     <HBox.margin>
+                        <Insets left="400.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

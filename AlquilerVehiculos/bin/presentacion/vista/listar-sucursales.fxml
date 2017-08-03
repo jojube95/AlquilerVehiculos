@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="390.0" prefWidth="339.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorListarSucursales">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <center>
+            <TableView fx:id="sucursales" prefHeight="368.0" prefWidth="339.0" BorderPane.alignment="CENTER">
+              <columns>
+                <TableColumn fx:id="id" prefWidth="63.0" text="ID" />
+                <TableColumn fx:id="direccion" prefWidth="275.0" text="Dirección" />
+              </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <Button fx:id="aceptar" mnemonicParsing="false" text="Aceptar" BorderPane.alignment="CENTER">
+               <BorderPane.margin>
+                  <Insets left="200.0" />
+               </BorderPane.margin>
+            </Button>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

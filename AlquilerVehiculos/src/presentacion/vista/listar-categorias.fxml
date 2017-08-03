@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="215.0" prefWidth="634.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorListarCategorias">
+   <children>
+      <BorderPane prefHeight="215.0" prefWidth="634.0">
+         <center>
+            <TableView fx:id="tvCategorias" prefHeight="142.0" prefWidth="634.0" BorderPane.alignment="CENTER">
+              <columns>
+                  <TableColumn fx:id="tcNombre" prefWidth="66.0" text="Nombre" />
+                <TableColumn fx:id="tcModIlim" prefWidth="139.0" text="Modalidad Ilimitada" />
+                <TableColumn fx:id="tcModKms" minWidth="0.0" prefWidth="99.0" text="Modalidad Kms" />
+                  <TableColumn fx:id="tcTR" minWidth="7.0" prefWidth="92.0" text="Todo Riesgo" />
+                  <TableColumn fx:id="tcTer" prefWidth="78.0" text="Terceros" />
+                  <TableColumn fx:id="tcKmModKm" prefWidth="159.0" text="Km Modalidad Kilometros" />
+              </columns>
+            </TableView>
+         </center>
+         <bottom>
+            <HBox prefHeight="27.0" prefWidth="634.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="aceptar" mnemonicParsing="false" text="Aceptar">
+                     <HBox.margin>
+                        <Insets right="15.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</AnchorPane>

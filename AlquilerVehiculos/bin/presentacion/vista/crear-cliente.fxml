@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="314.0" prefWidth="336.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="presentacion.control.ControladorCrearCliente">
+   <children>
+      <VBox prefHeight="316.0" prefWidth="336.0">
+         <children>
+            <HBox prefHeight="20.0" prefWidth="331.0">
+               <children>
+                  <Label text="DNI: " />
+                  <TextField fx:id="dni" />
+               </children>
+            </HBox>
+            <HBox prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label text="Nombre y apellidos: " />
+                  <TextField fx:id="nombreApellidos" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="40.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label text="Dirección" />
+                  <TextField fx:id="direccion" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="75.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label text="Código Postal: " />
+                  <TextField fx:id="codigoPostal" prefHeight="25.0" prefWidth="57.0" />
+                  <Label layoutX="10.0" layoutY="10.0" text="Población: " />
+                  <TextField fx:id="poblacion" prefHeight="25.0" prefWidth="95.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="75.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label text="Carnet de conducir: " />
+                  <DatePicker fx:id="fechaCarnet" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="145.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label text="Datos de Tarjeta de Crédito" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label text="Número: " />
+                  <TextField fx:id="digitosTC" prefHeight="25.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="110.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="158.0" text="Año Caducidad(4 cifras): " />
+                  <TextField fx:id="añoTC" prefHeight="25.0" prefWidth="84.0" />
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="14.0" prefWidth="114.0" text="Mes Caducidad: " />
+                  <TextField fx:id="mesTC" prefHeight="25.0" prefWidth="95.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="250.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Label prefHeight="14.0" prefWidth="82.0" text="CVC(3 cifras): " />
+                  <TextField fx:id="cvc" prefHeight="25.0" prefWidth="97.0" />
+                  <Label layoutX="10.0" layoutY="10.0" prefHeight="17.0" prefWidth="92.0" text="Tipo de Tarjeta: " />
+                  <TextField fx:id="tipoTarjeta" prefHeight="25.0" prefWidth="91.0" />
+               </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="70.0" prefHeight="35.0" prefWidth="284.0">
+               <children>
+                  <Button fx:id="aceptar" mnemonicParsing="false" onAction="#aceptar" text="Aceptar" />
+                  <Button fx:id="cancelar" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" text="Cancelar" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
